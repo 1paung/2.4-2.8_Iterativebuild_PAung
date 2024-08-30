@@ -1,0 +1,344 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 800px auto 150px;
+  grid-template-columns: 100%;
+  width: 100%; /* sets the width of the container to 800px */
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Inika';
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: grey;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.nav {
+  /* ... other nav styles ... */
+  grid-column: 6;
+  grid-row: 1; /* Position at the top */
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none; 
+}
+
+ul {
+   display: inline;
+   padding: 30px 10px 30px 0px;
+   list-style: none;
+}
+
+ul li {
+   font-family: Arial;
+   font-size: 18px;
+   font-weight: ;
+   display: inline-block;
+   margin-right: -4px;
+   position: relative;
+   padding: 15px 70px 17px; /* padding for main block menu buttons */
+}
+
+ul li:hover {
+   background: #2e4040
+}
+
+/* Hover Colors*/
+a:link{color: #FFFFFF;} /* unvisited link */
+a:visited{color: #FFFFFF;} /* visited link */
+a:hover{color: #1c2929;} /* mouse over link */
+a:active{color: #FFFFFF;} /* selected link */
+
+ul li ul {
+   padding: 0;
+   position: absolute;
+   top: 48px; /* space between each drop-down menu list */
+   left: 0;
+   width: 234px; /* width of drop-down menu list */
+   display: none;
+   visibility: hidden; /* this hides the drop-down menu list */
+   z-index: 1; /* for overlapping divs, bringing to the front like a drop-down menu */
+}
+
+ul li ul li {
+   background: #2e4040; /* this is the drop-down menu background color */
+   display: block;
+}
+ul li ul li:hover { background: #405757; } /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+   display: block;
+   visibility: visible; /* this makes the drop-down menu visable*/
+}
+/* Style for Navigation ends here */
+
+
+.rectangle {
+  /* common styles for all rectangles */
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  border: 1px solid #666;
+  text-align: center;
+  padding: 30px;
+  
+}
+
+.image-1 {
+  position: relative;
+  left: 30px; /* Add padding to the left */
+  top: 30px; /* Add padding to the top */
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+.image-1 span {
+  position: relative;
+  top: -10px;
+  font-size: 30px;
+}
+  
+
+.image-2 {
+  position: relative;
+  left: -7px;
+  width: 1870px;
+  height: 50px;
+  text-align: center; /* Center the text */
+  font-size: 40px;
+}
+
+.image-3 {
+  position: relative;
+  top: 180px;
+  left: 900px;
+  width: 870px;
+  height: 500px;
+  text-align: center; /* Center the text */
+  font-size: 40px;
+}
+
+.image-4 {
+  position: relative;
+  top: 120px;
+  left: 500px;
+  width: 870px;
+  height: 600px;
+  text-align: center; /* Center the text */
+  font-size: 40px;
+}
+  
+h1 { /* Image */
+  padding-right: 600px;
+  padding-top: 200px;
+  font-size: 60px;
+}
+
+.block1 {
+  position: relative;
+  left: 40px;
+  top: 115px;
+  height: 10px;
+  width: 300px;
+  background-color: #FB2E2E;
+  display: inline-block;
+}
+
+
+.block2 {
+  position: relative;
+  left: 45px;
+  top: 115px;
+  height: 10px;
+  width: 300px;
+  background-color: #FBD12E;
+  display: inline-block;
+}
+
+h2{ /* Adrenaline */
+  top: 95px;
+  position: relative;
+  bottom: 570px; 
+  left: 38px;
+  font-size: 45px;
+}
+
+h3{ /* Arena */
+  position:relative;
+  top: 50px;
+  left: 38px;
+  font-size: 45px;
+}
+
+#p1 {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  padding-right: 250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+#p2 {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  padding-right: 250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+#p3 {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  padding-right: 250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+h4 {
+  position: relative;
+  top: -550px;
+  left: 40px;
+  font-size: 45px;
+}
+
+h5{ /* Video */
+  position: relative;
+  top: -680px;
+  left: 900px;
+  font-size: 45px;
+}
+
+#p4 {
+  position: relative;
+  top: -550px;
+  left: 40px;
+  padding-right: 1250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+#p5 {
+  position: relative;
+  top: -550px;
+  left: 40px;
+  padding-right: 1250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+#p6 {
+  position: relative;
+  top: -550px;
+  left: 40px;
+  padding-right: 1250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+#p7 {
+  position: relative;
+  top: -550px;
+  left: 40px;
+  padding-right: 1250px; 
+  font-size: 20px; /* Set your desired font size */
+}
+
+.block3 {
+  position: relative;
+  left: 40px;
+  top: -500px;
+  height: 10px;
+  width: 150px;
+  background-color: #FB2E2E;
+  display: inline-block;
+}
+
+.block4 {
+  position: relative;
+  left: 45px;
+  top: -500px;
+  height: 10px;
+  width: 150px;
+  background-color: #FBD12E;
+  display: inline-block;
+}
+
+.block5 {
+  position: relative;
+  left: 600px;
+  top: -500px;
+  height: 10px;
+  width: 250px;
+  background-color: #FB2E2E;
+  display: inline-block;
+}
+
+.block6 {
+  position: relative;
+  left: 605px;
+  top: -500px;
+  height: 10px;
+  width: 250px;
+  background-color: #FBD12E;
+  display: inline-block;
+}
+
+.content {
+  box-sizing: border-box;
+  font-size: 15px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.section-1 {
+  background-color: #dedede; /* light gray */
+  padding: 40px;
+  padding-bottom: 40px;
+  height: 750px;
+}
+
+.section-2 {
+  background-color: white; /* white */
+  padding: 40px;
+  padding-bottom: 70px;
+  height: 850px;
+}
+
+.section-3 {
+  background-color: #dedede; /* light gray */
+  padding: 40px;
+  padding-bottom: 70px;
+  height:880px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: #FF0000; /* red */
+  color: white;
+  padding-left: 20px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+#p13 {
+  position:relative;
+  bottom: -35px; 
+  left: 170px; 
+  padding-right: 1300px;
+  font-size: 22px; 
+}
