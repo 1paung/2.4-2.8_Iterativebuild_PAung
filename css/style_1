@@ -1,1 +1,174 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 600px auto 200px;
+  min-height: 100vh;
+}
 
+.header {
+  box-sizing: border-box;
+  background-color: grey;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.nav {
+  /* ... other nav styles ... */
+ grid-column: 4;
+  grid-row: 1; /* Position at the top */
+  margin-top: 20px;
+}
+ul {
+   display: inline;
+   padding: 15px 0px 0px 0px;
+   list-style: none;
+}
+
+ul li {
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: bold;
+   display: inline-block;
+   margin-right: -4px;
+   position: relative;
+   padding: 15px 70px 17px; /* padding for main block menu buttons */
+}
+
+ul li:hover {
+   background: #2e4040
+}
+
+/* Hover Colors*/
+a:link{color: #FFFFFF;} /* unvisited link */
+a:visited{color: #FFFFFF;} /* visited link */
+a:hover{color: #1c2929;} /* mouse over link */
+a:active{color: #FFFFFF;} /* selected link */
+
+ul li ul {
+   padding: 0;
+   position: absolute;
+   top: 48px; /* space between each drop-down menu list */
+   left: 0;
+   width: 234px; /* width of drop-down menu list */
+   display: none;
+   visibility: hidden; /* this hides the drop-down menu list */
+   z-index: 1; /* for overlapping divs, bringing to the front like a drop-down menu */
+}
+
+ul li ul li {
+   background: #2e4040; /* this is the drop-down menu background color */
+   display: block;
+}
+ul li ul li:hover { background: #405757; } /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+   display: block;
+   visibility: visible; /* this makes the drop-down menu visable*/
+}
+/* Style for Navigation ends here */
+
+
+.rectangle {
+  /* common styles for all rectangles */
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  border: 1px solid #666;
+  text-align: center;
+  padding: 30px;
+  
+}
+
+.image-1 span {
+  padding-left: 1px; /* Add padding to the left */
+  padding-top: 1px; /* Add padding to the top */
+  text-align: center;
+  display: block;
+}
+
+.image-2 {
+  left: -8px;
+  width: 1300px;
+  text-align: center; /* Center the text */
+}
+
+.image-3 {
+  position: relative;
+  left: 850px; /* Adjust this value to control the horizontal position */
+  top: 80px; /* Adjust this value to control the vertical position */
+  text-align: center;
+  width: 1000px; 
+  height: 600px;
+}
+
+.image-4 {
+  position: relative;
+  left: 950px; /* Adjust this value to control the horizontal position */
+  top: -150px; /* Adjust this value to control the vertical position */
+  text-align: center;
+  width: 800px; 
+  height: 500px;
+}
+
+h1 {
+  padding-right: 600px;
+  padding-top: 200px;
+}
+
+h2{
+  padding-bottom:100px;
+  position: relative;
+  bottom: 600px; 
+  left: 30px;
+}
+
+h3{
+  position:relative;
+  top: 10px;
+  left: 30px;
+}
+
+h4{
+  position:relative;
+  top: -300px;
+  left: 1000px; 
+}
+
+h5{
+  position:relative;
+  top: -30px; 
+  left: 30px;  
+}
+
+.content {
+  box-sizing: border-box;
+  font-size: 15px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.section-gray {
+  background-color: #f7f7f7; /* light gray */
+  padding: 40px;
+  padding-bottom: 40px;
+  height: 900px;
+}
+
+.section-white {
+  background-color: white; /* white */
+  padding: 40px;
+  padding-bottom: 40px;
+  height:600px;
+}
+
+.footer {
+  background-color: #FF0000; /* red */
+  color: white;
+  padding-left: 20px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
